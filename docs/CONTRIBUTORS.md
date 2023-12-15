@@ -7,7 +7,7 @@
 Utilisez des séparateurs comme "-" ou "/" pour faciliter la lecture.
 Utilisez également en premier lieu un des mots parmis la liste suivante :
 
-![](/contrib_img/word.png)
+![](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_02/blob/main/docs/contrib_img/word.png)
 
 exemple :
 
