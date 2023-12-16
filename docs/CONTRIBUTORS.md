@@ -1,9 +1,15 @@
 # Contribution Guidelines and Best Practices
 
+1. [Gestion du nom des branches](#gestion-du-nom-des-branches)
+2. [Conventions relatives aux commits](#conventions-relatives-aux-commits)
+3. [placeholder](#)
+4. [placeholder](#)
+5. [placeholder](#)
+
 # Gestion du nom des branches
 
 Plusieurs politiques de nomenclature des branches sont envisageables,
-elles sont un ensemble de _best pratices_ qu'un contributeurs doit respecter au maximum.
+elles sont un ensemble de _best pratices_ qu'un contributeur doit respecter au maximum.
 
 ## Utiliser des séparateurs et définir le type de la branche
 
@@ -14,7 +20,7 @@ Utilisez également en premier lieu un des mots parmi la liste suivante :
 
 exemple :
 
-`test-login-new-user OR test/login/new/user`
+    `test-login-new-user OR test/login/new/user`
 
 ## Utiliser une nomenclature incrémentale
 
@@ -22,7 +28,7 @@ Donnez à chaque nouvelle _issue_ rencontrée un id unique
 
 exemple :
 
-`wip-202-invalid-post-blog`
+    `wip-202-invalid-post-blog`
 
 ## Inclure le nom de l'auteur de la branche
 
@@ -31,4 +37,23 @@ en suivant le format "**auteur**-**catégorie**-**nom**"
 
 exemple :
 
-`nohbruh-bugfix-private-blog-access-control`
+    `nohbruh-bugfix-private-blog-access-control`
+
+## A ne pas faire
+
+**N'ayez pas de noms de branche trop longs et évitez d'utiliser uniquement des chiffres.**
+
+# Conventions relatives aux commits
+
+Typiquement, les conventions des messages de commit se basent sur le template
+suivant :
+
+    <type>[optional scope]: <description>
+
+    [optional body]
+
+    [optional footer(s)]
+
+Le contributeur est appelé à faire preuve d'un _best effort_ lors de ses commits.
+
+Pour plus d'[informations complémentaires](https://www.conventionalcommits.org/en/v1.0.0/)
