@@ -70,7 +70,7 @@
         <jhipster-dependencies.version>8.1.0-SNAPSHOT</jhipster-dependencies.version>
         <spring-boot.version>3.2.0</spring-boot.version>
         <archunit-junit5.version>1.2.0</archunit-junit5.version>
-        <checkstyle.version>10.12.5</checkstyle.version>
+        <checkstyle.version>10.12.6</checkstyle.version>
         <checksum-maven-plugin.version>1.11</checksum-maven-plugin.version>
         <frontend-maven-plugin.version>1.14.2</frontend-maven-plugin.version>
         <git-commit-id-maven-plugin.version>7.0.0</git-commit-id-maven-plugin.version>
