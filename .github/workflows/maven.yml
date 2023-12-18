@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: [test-01]
 
     steps:
     - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         
-    - name: Run the Maven verify phase
+    - name: Run the Maven tests
       run: mvn test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
