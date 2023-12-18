@@ -57,3 +57,9 @@ suivant :
 Le contributeur est appelé à faire preuve d'un _best effort_ lors de ses commits.
 
 Pour plus d'[informations complémentaires](https://www.conventionalcommits.org/en/v1.0.0/)
+
+# Release Plan
+
+Idéalement, nous souhaitons tenir un rythme d'1 release mineure toutes les 3 ou 4 semaines et 1 majeure par an.
+En ce qui concerne les mineures, dans l'éventualité où il serait impossible que des issues soient résolues pour la release,
+cette dernière peut-être postponée ou les features reportées à la release suivante.
