@@ -1,0 +1,14 @@
+org.jhipster.blog
+org.jhipster.blog.aop.logging
+org.jhipster.blog.config
+org.jhipster.blog.domain
+org.jhipster.blog.management
+org.jhipster.blog.repository
+org.jhipster.blog.security
+org.jhipster.blog.service
+org.jhipster.blog.service.dto
+org.jhipster.blog.service.mapper
+org.jhipster.blog.web.filter
+org.jhipster.blog.web.rest
+org.jhipster.blog.web.rest.errors
+org.jhipster.blog.web.rest.vm
