@@ -114,10 +114,8 @@
         <sonar-maven-plugin.version>3.10.0.2594</sonar-maven-plugin.version>
         <spotless-maven-plugin.version>2.40.0</spotless-maven-plugin.version>
         <validation-api.version>3.0.2</validation-api.version>
-        <properties>
-            <sonar.organization>unamurcsfaculty</sonar.organization>
-            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        </properties>
+        <sonar.organization>unamurcsfaculty</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
     <dependencyManagement>
