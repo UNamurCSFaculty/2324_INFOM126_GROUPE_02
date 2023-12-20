@@ -16,5 +16,4 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}rsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=UNamurCSFaculty_2324_INFOM126_GROUPE_02
