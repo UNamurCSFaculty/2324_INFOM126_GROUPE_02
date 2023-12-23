@@ -6,11 +6,12 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  - name: Build and analyze
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-    run: mvn verify sonar:sonar \
-      -Dsonar.host.url=https://sonarcloud.io \
-      -Dsonar.organization= unamurcsfaculty \
-      -Dsonar.projectKey= UNamurCSFaculty_2324_INFOM126_GROUPE_02
+  build:
+    - name: Build and analyze
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      run: mvn verify sonar:sonar \
+        -Dsonar.host.url=https://sonarcloud.io \
+        -Dsonar.organization= unamurcsfaculty \
+        -Dsonar.projectKey= UNamurCSFaculty_2324_INFOM126_GROUPE_02
