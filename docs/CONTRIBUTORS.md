@@ -2,9 +2,9 @@
 
 1. [Gestion du nom des branches](#gestion-du-nom-des-branches)
 2. [Conventions relatives aux commits](#conventions-relatives-aux-commits)
-3. [placeholder](#)
-4. [placeholder](#)
-5. [placeholder](#)
+3. [Gestion des issues](#gestion-des-issues)
+4. [Conditions de merge sur main](#conditions-de-merge-sur-main)
+5. [Release Plan](#release-plan)
 
 # Gestion du nom des branches
 
@@ -58,8 +58,38 @@ Le contributeur est appelé à faire preuve d'un _best effort_ lors de ses commi
 
 Pour plus d'[informations complémentaires](https://www.conventionalcommits.org/en/v1.0.0/)
 
+# Gestion des issues
+
+## Sécurité
+
+Avec notre analyse codeql de la codebase, il est possible que des vulnérabilités au sein de l'application soient
+identifiées. Si vous pensez être capable de les résoudre, créez une nouvelle branche **pour CHAQUE issue** en respectant la nomenclature décrite
+plus haut. Une fois résolue, ouvrez un nouveau ticket de _security advisory_ via le template fourni sur le repository
+du projet sur github.
+
+[https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_02/issues](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_02/issues)
+
+## Bug Report et proposition de Features
+
+Si vous découvrez des bugs au sein de l'application, rapportez-les sur la page des [issues](https://github.com/UNamurCSFaculty/2324_INFOM126_GROUPE_02/issues)
+du repository en suivant le template fourni. Pour ce qui est de la proposition de nouvelles features que vous aimeriez
+voir dans l'application, la démarche reste la même : allez sur la page des issues et choississez le template relatif à votre
+demande.
+
+# Conditions de merge sur main
+
+Le merge sur la branche main lors de vos pull_request ne sera possible que si le build d'intégration continue (via les actions GitHub)
+est concluant, c'est à dire :
+
+1. Le build maven et les tests unitaires sont passés
+2. Les tests du module Node.js sont passés
+3. les _Quality Gates_ définies sur le SonarCloud du projet sont passés
+
+En cas d'échec de l'un de ces workflows, le pull_request sera rejetée.
+
 # Release Plan
 
 Idéalement, nous souhaitons tenir un rythme d'1 release mineure toutes les 3 ou 4 semaines et 1 majeure par an.
 En ce qui concerne les mineures, dans l'éventualité où il serait impossible que des issues soient résolues pour la release,
-cette dernière peut-être postponée ou les features reportées à la release suivante.
+cette dernière peut-être postponée ou les features reportées à la release suivante. Dans tous les cas, à l'approche de la release,
+faites de votre mieux pour finir ce que vous aviez commencé [**de corriger/implémenter**].
