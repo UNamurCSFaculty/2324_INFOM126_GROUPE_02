@@ -116,8 +116,7 @@
         <validation-api.version>3.0.2</validation-api.version>
         <sonar.organization>unamurcsfaculty</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.projectKey>UNamurCSFaculty_2324_INFOM126_GROUPE_02</sonar.projectKey>
-        <sonar.moduleKey>${project.artifactId}</sonar.moduleKey>
+
     </properties>
 
     <dependencyManagement>
