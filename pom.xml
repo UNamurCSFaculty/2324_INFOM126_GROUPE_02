@@ -116,7 +116,6 @@
         <validation-api.version>3.0.2</validation-api.version>
         <sonar.organization>unamurcsfaculty</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-
     </properties>
 
     <dependencyManagement>
