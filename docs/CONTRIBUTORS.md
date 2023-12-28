@@ -4,7 +4,8 @@
 2. [Conventions relatives aux commits](#conventions-relatives-aux-commits)
 3. [Gestion des issues](#gestion-des-issues)
 4. [Conditions de merge sur main](#conditions-de-merge-sur-main)
-5. [Release Plan](#release-plan)
+5. [Scan Sonar](#scan-sonar)
+6. [Release Plan](#release-plan)
 
 # Gestion du nom des branches
 
@@ -81,11 +82,25 @@ demande.
 Le merge sur la branche main lors de vos pull_request ne sera possible que si le build d'intégration continue (via les actions GitHub)
 est concluant, c'est à dire :
 
-1. Le build maven et les tests unitaires sont passés
-2. Les tests du module Node.js sont passés
-3. les _Quality Gates_ définies sur le SonarCloud du projet sont passés
+1. Le build `maven` et les tests unitaires sont passés
+2. Les tests du module `Node.js` sont passés
+3. les `Quality Gates` définies sur le SonarCloud du projet sont passés
 
 En cas d'échec de l'un de ces workflows, le pull_request sera rejetée.
+
+# Scan Sonar
+
+Pour autant que vous fassiez partie de l'organisation et que vous ayiez les droits d'analyse sur le projet,
+vous pouvez lancer localement un scan sonar avec la commande suivante (n'oubliez pas de faire un `mvn clean verify` au préalable):
+
+    mvn sonar:sonar \
+    -Dsonar.projectKey=UNamurCSFaculty_2324_INFOM126_GROUPE_02 \
+    -Dsonar.organization=unamurcsfaculty \
+    -Dsonar.host.url=https://sonarcloud.io \
+    -Dsonar.login=<YOUR_TOKEN>
+
+avec `Your_TOKEN` étant votre token généré via la page Sécurité de votre profil servant
+à vous authentifier
 
 # Release Plan
 
