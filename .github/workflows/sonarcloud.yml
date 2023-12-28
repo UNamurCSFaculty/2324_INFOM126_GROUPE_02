@@ -11,7 +11,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v1
         with:
-          java-version: '11'
+          java-version: '17'
       - name: Analyze with SonarCloud
         run: mvn -B verify sonar:sonar -Dsonar.projectKey=UNamurCSFaculty_2324_INFOM126_GROUPE_02 -Dsonar.organization=unamurcsfaculty -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
         env:
