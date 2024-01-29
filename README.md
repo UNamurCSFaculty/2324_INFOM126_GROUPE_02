@@ -2,6 +2,8 @@
 
 This application was generated using JHipster 8.0.0, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v8.0.0](https://www.jhipster.tech/documentation-archive/v8.0.0).
 
+test
+
 ## Project Structure
 
 Node is required for generation and recommended for development. `package.json` is always generated for a better development experience with prettier, commit hooks, scripts and so on.
